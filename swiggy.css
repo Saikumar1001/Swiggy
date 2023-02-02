@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+}
+
+#home>section {
+    width: 40%;
+}
+
+
+#home nav {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home nav img {
+    width: 15rem;
+    height: auto;
+}
+
+#home nav button {
+    width: 10rem;
+    padding: 1rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+
+}
+
+#order h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem ;
+}
+
+#home_img {
+    width: 50%;
+    height: 60vh;
+    background-image: url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Breakfast2-new_men3ne");
+    background-size: cover;
+    animation: sec_img 50s 5s infinite alternate forwards;
+
+}
+
+#anim {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+#anim::before {
+    content: 'Hungry?';
+    position: absolute;
+    top: 0;
+    animation: swiggy 20s infinite;
+}
+
+#home input {
+    width: 50%;
+    padding: 1.2rem;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+#find {
+    width: 15rem;
+    padding: 1.4rem;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+
+}
+
+#order h4 {
+    font-size: 1.3rem;
+    /* margin: 2rem 0; */
+    color: gray;
+}
+
+#order h5 {
+    font-size: 1.3rem;
+    color: gray;
+}
+
+#order h6 {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+#minimum {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(24, 15, 15);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#minimum .live {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#minimum img {
+    width: 30%;
+    height: 25vh;
+}
+
+#minimum h3 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+#minimum p {
+    width: 70%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#pocket {
+    display: flex;
+    width: 100%;
+    height:70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#pocket #pocket_sec1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pocket h1 {
+    font-size: 3rem;
+    width: 40%;
+    margin: 2rem 0;
+    text-align: start;
+}
+
+#pocket #pocket_sec1 img {
+    width: 20%;
+    height: auto;
+
+}
+
+#pocket #pocket_sec2 {
+    display: flex;
+    width: 50%;
+}
+
+#pocket #pocket_sec2 img {
+    width: 40%;
+}
+
+#pocket #pocket_sec1 h5 {
+    width: 40%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: gray;
+    margin-bottom: 4rem;
+    text-align: start;
+}
+
+footer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
+}
+
+footer>section {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul h3 {
+    font-size: 3rem;
+    color: gray;
+}
+
+footer ul li img {
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+
+}
+
+footer ul {
+    width: 30rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    width: 90%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section {
+    width: 100%;
+}
+
+footer #contact {
+    display: flex;
+    justify-content: center;
+    height: 18rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+#swiggy {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: 2rem 0; */
+}
+#swiggy img{
+    width: 12%;
+}
+#swiggy h3 {
+    font-size: 2rem;
+}
+
+#swiggy ion-icon {
+    font-size: 3rem;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+}
+
+@keyframes swiggy {
+    0% {
+        content: "Unexpected Guests";
+    }
+
+    25% {
+        content: "Game night?";
+    }
+
+    50% {
+        content: "Cooking gone Wrong?";
+    }
+
+    75% {
+        content: "Movie marathon?";
+    }
+
+    100% {
+        content: "Late night at office?";
+    }
+}
+
+@keyframes sec_img {
+    0% {
+        background-image: url(https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1-new_douhad);
+        background-size: cover;
+
+    }
+
+    25% {
+        background-image: url(https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch3-new_mkqxdb);
+        background-size: cover;
+
+    }
+
+    50% {
+        background-image: url(https://www.fnbbuzz.com/wp-content/uploads/2019/05/pexels-photo-958545.jpeg);
+        background-size: cover;
+
+    }
+
+    75% {
+        background-image: url(https://sizzlingbombay.net/wp-content/uploads/2020/07/image1.jpg);
+        background-size: cover;
+
+    }
+
+    100% {
+        background-image: url(https://www.stilhauskitchens-1.co.uk/wp-content/uploads/9-thali-lunch-zoomed-The-Dhabba.jpg);
+        background-size: cover;
+
+    }
+}

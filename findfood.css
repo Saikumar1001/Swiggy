@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+#food_nav {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    align-items: center;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+hr{
+    width: 100%;
+}
+#food_nav p {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#food_nav ul {
+    width: 40%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#food_nav ul ion-icon {
+    font-size: 1.5rem;
+}
+
+#food_nav li {
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+
+}
+
+#food_nav img {
+    width: auto;
+    height: 5rem;
+}
+#home_food img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+
+#home_food {
+    width: 100%;
+    height: 70rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+#home_food img {
+    width: auto;
+    height: 23rem;
+}
+
+#home_food .home_food1 {
+    width: 24rem;
+}
+
+
+#rateing {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* font-size: 2rem; */
+    margin: 2rem 0;
+}
+
+#rateing h1 {
+    font-size: 4rem;
+}
+
+#rateing ul {
+    list-style: none;
+    display: flex;
+    width: 60%;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+
+#restaurant{
+    width: 100%;
+    /* height: 100%; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.4rem;
+   text-align: center;
+   box-shadow: 0 0 0 0 white;
+   line-height: 3rem;
+   gap: 2rem;
+   flex-wrap: wrap;
+   padding: 6rem;
+}
+#restaurent .dessert{
+    width:60% ;
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+#restaurant .dessert img{
+    width: 25rem;
+    height: auto;
+}
+#restaurant .dessert section{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#restaurant .dessert p{
+    width: 100%;
+    text-align: center;
+}
+#restaurant .dessert span{
+    background-color: rgb(120, 210, 30);
+   padding: 0.3rem;
+   color: white;
+}
+#restaurant .dessert h6{
+    color: chocolate;
+    font-size: 1.4rem;
+}
+.dessert:hover{
+    transform: scale(1.04);
+    transition-duration: 1s;
+    box-shadow: 0 0 2px 2px gray;
+    border: 1px solid gray;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
+    text-align: start;
+}
+
+footer>section {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul h3 {
+    font-size: 2.3rem;
+    color: gray;
+}
+
+footer ul li img {
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+
+}
+
+footer ul {
+    width: 30rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    width: 90%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section {
+    width: 100%;
+}
+
+footer #contact {
+    display: flex;
+    justify-content: center;
+    height: 18rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+#swiggy {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: 2rem 0; */
+}
+#swiggy img{
+    width: 12%;
+}
+#swiggy h3 {
+    font-size: 2rem;
+}
+
+#swiggy ion-icon {
+    font-size: 3rem;
+}
